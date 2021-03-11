@@ -10,7 +10,7 @@ target 'RNRealm' do
 
   pod 'RealmSwift', '10.4.0', :modular_headers => true
   pod 'Realm', :modular_headers => true
-  pod 'IceCream'
+  pod 'IceCream', :git => 'https://github.com/EricWiener/IceCream.git', :commit => '37f73610f23335de98082a96be5478749ae25fce'
 
   target 'RNRealmTests' do
     inherit! :complete

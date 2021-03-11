@@ -266,7 +266,7 @@ DEPENDENCIES:
   - FBReactNativeSpec (from `../node_modules/react-native/Libraries/FBReactNativeSpec`)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
-  - IceCream
+  - IceCream (from `https://github.com/EricWiener/IceCream.git`, commit `37f73610f23335de98082a96be5478749ae25fce`)
   - RCTRequired (from `../node_modules/react-native/Libraries/RCTRequired`)
   - RCTTypeSafety (from `../node_modules/react-native/Libraries/TypeSafety`)
   - React (from `../node_modules/react-native/`)
@@ -298,7 +298,6 @@ SPEC REPOS:
   trunk:
     - boost-for-react-native
     - GCDWebServer
-    - IceCream
     - Realm
     - RealmSwift
 
@@ -313,6 +312,9 @@ EXTERNAL SOURCES:
     :podspec: "../node_modules/react-native/third-party-podspecs/Folly.podspec"
   glog:
     :podspec: "../node_modules/react-native/third-party-podspecs/glog.podspec"
+  IceCream:
+    :commit: 37f73610f23335de98082a96be5478749ae25fce
+    :git: https://github.com/EricWiener/IceCream.git
   RCTRequired:
     :path: "../node_modules/react-native/Libraries/RCTRequired"
   RCTTypeSafety:
@@ -358,6 +360,11 @@ EXTERNAL SOURCES:
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
+CHECKOUT OPTIONS:
+  IceCream:
+    :commit: 37f73610f23335de98082a96be5478749ae25fce
+    :git: https://github.com/EricWiener/IceCream.git
+
 SPEC CHECKSUMS:
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   DoubleConversion: cde416483dac037923206447da6e1454df403714
@@ -392,6 +399,6 @@ SPEC CHECKSUMS:
   RealmSwift: 37a93ae742667948cc094a3c6ae3d006db32b66f
   Yoga: 4bd86afe9883422a7c4028c00e34790f560923d6
 
-PODFILE CHECKSUM: 61aed0d8764fdfeb54fa20248183289bc3ef08d4
+PODFILE CHECKSUM: 44bc763029198337b470c7c6dfbd615ab2c95a26
 
 COCOAPODS: 1.10.1
