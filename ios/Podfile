@@ -2,13 +2,13 @@ require_relative '../node_modules/react-native/scripts/react_native_pods'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
 platform :ios, '10.0'
+use_frameworks!
 
 target 'RNRealm' do
   config = use_native_modules!
 
   use_react_native!(:path => config["reactNativePath"])
 
-  pod 'RealmSwift', '10.4.0', :modular_headers => true
   pod 'Realm', :modular_headers => true
   pod 'IceCream', :git => 'https://github.com/EricWiener/IceCream.git', :commit => '37f73610f23335de98082a96be5478749ae25fce'
 
